@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+     .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+
+        
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    </style>
     <link rel="stylesheet" href="project.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +47,15 @@
             <ul class="bar">
                 <li class="comp"><a class="line" href="project.html\">Home</a></li>
                 <li class="comp"><a class="line" href="#about">About</a></li>
-                <li class="comp"><a class="line" href="#servies">Services <select name="servic" id="servic"><option value="ug">ug</option><option value="pg">PG</option></select></a></li>
+                 <li class="comp"> <div class="dropdown">
+                    <a class="line" href="#services">Services</a>
+                    <div class="dropdown-content">
+                      <a href="#ug">UG </a>
+                      <a href="#pg">PG</a>
+                    </div>
+                  </div>
+                    <!--<a class="line" href="#servies">Services <select name="servic" id="servic"><option value="ug"><a href="#ug">ug</a></option><option value="pg"><a href="#pg">PG</a></option></select></a>-->
+                </li> 
                 <li class="comp"><a class="line" href="#Psychometric">Psychometric Test</a></li>
                 <li class="comp"><a class="line" href="#contact us">Contact US</a></li>
                 <li class="comp"><a class="line" href="login/singup">Login/signup</a></li>
@@ -62,31 +101,27 @@
             </div>
             </div>
         </div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam quod quaerat molestiae odio sit fuga laudantium, magnam quidem hic ea adipisci alias repudiandae exercitationem praesentium porro inventore autem consectetur, at esse excepturi? Autem aliquid accusamus, sequi expedita quisquam earum rem, voluptatem tempore quam illum similique, at quo minima ea voluptates? Laborum beatae deleniti, fuga unde nostrum eum, distinctio repudiandae, dolorum eligendi pariatur quas. Nostrum, consequuntur eveniet tempore non ipsum ullam laborum? Consequuntur, pariatur architecto. Fuga fugit nemo atque quia velit, reprehenderit itaque quaerat eos, modi esse id eius amet optio. In esse, quasi soluta culpa ex placeat minima inventore vero.
-        </p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam quod quaerat molestiae odio sit fuga laudantium, magnam quidem hic ea adipisci alias repudiandae exercitationem praesentium porro inventore autem consectetur, at esse excepturi? Autem aliquid accusamus, sequi expedita quisquam earum rem, voluptatem tempore quam illum similique, at quo minima ea voluptates? Laborum beatae deleniti, fuga unde nostrum eum, distinctio repudiandae, dolorum eligendi pariatur quas. Nostrum, consequuntur eveniet tempore non ipsum ullam laborum? Consequuntur, pariatur architecto. Fuga fugit nemo atque quia velit, reprehenderit itaque quaerat eos, modi esse id eius amet optio. In esse, quasi soluta culpa ex placeat minima inventore vero.
-        </p>
+       <section class="section">
+        <h1 class="test">Test & Assessment</h1>
+       </section>
+       <div class="test_contain">
+        <div class="Psychometric">
+       <img class="pic" src="src/assets/images/critical-thinking.png" alt="Psychometric Assessment"> 
+        <h3 class="course_name" id="Assessment">Psychometric Assessment</h3>
+        <p class="course_Description" id="Description">Description for Psychometric Assessment</p>
+        <a class="learn" href="#start_test">Start Test</a>
+        </div>
+        <div class="NEET">
+        <img class="pic" src="src/assets/images/predictive-chart.png" alt="NEET" >
+        <h3 class="course_name" id="Tool">NEET Predictor Tool</h3>
+        <p class="course_Description" id="Predictor">Description for NEET Predictor Tool</p>
+        <a class="learn" href="#start_test_2">Start Test</a>
+        </div>
+       </div>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam quod quaerat molestiae odio sit fuga laudantium, magnam quidem hic ea adipisci alias repudiandae exercitationem praesentium porro inventore autem consectetur, at esse excepturi? Autem aliquid accusamus, sequi expedita quisquam earum rem, voluptatem tempore quam illum similique, at quo minima ea voluptates? Laborum beatae deleniti, fuga unde nostrum eum, distinctio repudiandae, dolorum eligendi pariatur quas. Nostrum, consequuntur eveniet tempore non ipsum ullam laborum? Consequuntur, pariatur architecto. Fuga fugit nemo atque quia velit, reprehenderit itaque quaerat eos, modi esse id eius amet optio. In esse, quasi soluta culpa ex placeat minima inventore vero.
-        </p>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam quod quaerat molestiae odio sit fuga laudantium, magnam quidem hic ea adipisci alias repudiandae exercitationem praesentium porro inventore autem consectetur, at esse excepturi? Autem aliquid accusamus, sequi expedita quisquam earum rem, voluptatem tempore quam illum similique, at quo minima ea voluptates? Laborum beatae deleniti, fuga unde nostrum eum, distinctio repudiandae, dolorum eligendi pariatur quas. Nostrum, consequuntur eveniet tempore non ipsum ullam laborum? Consequuntur, pariatur architecto. Fuga fugit nemo atque quia velit, reprehenderit itaque quaerat eos, modi esse id eius amet optio. In esse, quasi soluta culpa ex placeat minima inventore vero.
-        </p>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam quod quaerat molestiae odio sit fuga laudantium, magnam quidem hic ea adipisci alias repudiandae exercitationem praesentium porro inventore autem consectetur, at esse excepturi? Autem aliquid accusamus, sequi expedita quisquam earum rem, voluptatem tempore quam illum similique, at quo minima ea voluptates? Laborum beatae deleniti, fuga unde nostrum eum, distinctio repudiandae, dolorum eligendi pariatur quas. Nostrum, consequuntur eveniet tempore non ipsum ullam laborum? Consequuntur, pariatur architecto. Fuga fugit nemo atque quia velit, reprehenderit itaque quaerat eos, modi esse id eius amet optio. In esse, quasi soluta culpa ex placeat minima inventore vero.
-        </p>
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam quod quaerat molestiae odio sit fuga laudantium, magnam quidem hic ea adipisci alias repudiandae exercitationem praesentium porro inventore autem consectetur, at esse excepturi? Autem aliquid accusamus, sequi expedita quisquam earum rem, voluptatem tempore quam illum similique, at quo minima ea voluptates? Laborum beatae deleniti, fuga unde nostrum eum, distinctio repudiandae, dolorum eligendi pariatur quas. Nostrum, consequuntur eveniet tempore non ipsum ullam laborum? Consequuntur, pariatur architecto. Fuga fugit nemo atque quia velit, reprehenderit itaque quaerat eos, modi esse id eius amet optio. In esse, quasi soluta culpa ex placeat minima inventore vero.
-        </p>
-
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam quod quaerat molestiae odio sit fuga laudantium, magnam quidem hic ea adipisci alias repudiandae exercitationem praesentium porro inventore autem consectetur, at esse excepturi? Autem aliquid accusamus, sequi expedita quisquam earum rem, voluptatem tempore quam illum similique, at quo minima ea voluptates? Laborum beatae deleniti, fuga unde nostrum eum, distinctio repudiandae, dolorum eligendi pariatur quas. Nostrum, consequuntur eveniet tempore non ipsum ullam laborum? Consequuntur, pariatur architecto. Fuga fugit nemo atque quia velit, reprehenderit itaque quaerat eos, modi esse id eius amet optio. In esse, quasi soluta culpa ex placeat minima inventore vero.
-        </p>
-
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam quod quaerat molestiae odio sit fuga laudantium, magnam quidem hic ea adipisci alias repudiandae exercitationem praesentium porro inventore autem consectetur, at esse excepturi? Autem aliquid accusamus, sequi expedita quisquam earum rem, voluptatem tempore quam illum similique, at quo minima ea voluptates? Laborum beatae deleniti, fuga unde nostrum eum, distinctio repudiandae, dolorum eligendi pariatur quas. Nostrum, consequuntur eveniet tempore non ipsum ullam laborum? Consequuntur, pariatur architecto. Fuga fugit nemo atque quia velit, reprehenderit itaque quaerat eos, modi esse id eius amet optio. In esse, quasi soluta culpa ex placeat minima inventore vero.
-        </p>
-
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam quod quaerat molestiae odio sit fuga laudantium, magnam quidem hic ea adipisci alias repudiandae exercitationem praesentium porro inventore autem consectetur, at esse excepturi? Autem aliquid accusamus, sequi expedita quisquam earum rem, voluptatem tempore quam illum similique, at quo minima ea voluptates? Laborum beatae deleniti, fuga unde nostrum eum, distinctio repudiandae, dolorum eligendi pariatur quas. Nostrum, consequuntur eveniet tempore non ipsum ullam laborum? Consequuntur, pariatur architecto. Fuga fugit nemo atque quia velit, reprehenderit itaque quaerat eos, modi esse id eius amet optio. In esse, quasi soluta culpa ex placeat minima inventore vero.
-        </p>
 
 
     </main>
