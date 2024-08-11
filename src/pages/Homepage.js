@@ -15,12 +15,12 @@ const Homepage = () => {
     <>
       <div className="w-full">
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-green-400 to-blue-500 text-white py-20 px-10 text-center">
+        <section className="bg-gradient-to-r from-slate-900 to-slate-700 text-white py-20 px-10 text-center">
           <h1 className="text-5xl font-extrabold mb-4">Welcome to Learning HubSpot</h1>
           <p className="text-2xl mb-8">Your gateway to learning and growth</p>
           <Link
             to="/courses"
-            className="bg-white text-green-600 py-3 px-8 rounded-full font-semibold hover:bg-green-200 transition duration-300"
+            className="bg-white text-green-600 py-3 px-8 rounded-full font-semibold hover:bg-gradient-to-r from-blue-800 to-indigo-900 transition duration-300"
           >
             Explore Courses
           </Link>
