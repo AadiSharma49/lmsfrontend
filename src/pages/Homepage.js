@@ -10,6 +10,7 @@ import testimonialImage4 from "../assets/images/rating.png";
 import predictiveImages from "../assets/images/predictive-chart.png"
 import psychometrictest from "../assets/images/critical-thinking.png"
 
+
 const Homepage = () => {
   return (
     <>
@@ -27,27 +28,27 @@ const Homepage = () => {
         </section>
 
         {/* Courses Section */}
-        <section className="py-20 px-10 bg-gray-100">
-          <h2 className="text-4xl font-bold mb-12 text-center">
+        <section className="py-20 px-10 bg-white">
+          <h2 className="text-5xl font-bold mb-12 text-center">
             Popular Courses
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
             {[courseImage1, courseImage2, courseImage3].map((course, index) => (
               <div
                 key={index}
-                className="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 flex items-center justify-center flex-col transition duration-300"
+                className="bg-white shadow-2xl rounded-2xl border-zinc-950	 overflow-hidden transform hover:scale-105 flex items-center justify-center flex-col transition duration-300"
               >
                 <img
                   src={course}
                   alt={`Course ${index + 1}`}
                   className="w-[40%] h-[70%] p-7 object-cover"
                 />
-                <div className="p-4 text-center">
+                <div className="p-4 text-center"s>
                   <h3 className="text-2xl font-bold mb-2">
-                    Course {index + 1}
+                  Bachelor of Business Administration 
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    Course Description {index + 1}
+                  An undergraduate course in business administration and management. 
                   </p>
                   <Link
                     to={`/course-details/${index + 1}`}
@@ -62,7 +63,7 @@ const Homepage = () => {
         </section>
 
         {/* Psychometric Assessment Section */}
-        <section className="bg-gradient-to-r from-pink-400 to-red-500 text-white py-20 px-10 mt-12 mb-12 text-center rounded-xl mx-4">
+        <section className="bg-gradient-to-tl from-slate-900 via-slate-400 to-slate-600 text-white py-20 px-10 mt-12 mb-12 text-center rounded-xl mx-4">
           <h2 className="text-3xl font-bold mb-4">Psychometric Assessment</h2>
           <p className="text-xl mb-8">Sign up and start your free assessment</p>
           <Link
