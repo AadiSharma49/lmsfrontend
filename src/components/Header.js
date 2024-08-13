@@ -52,23 +52,23 @@ const Header = () => {
           </div>
         </div>
         {/* Main navigation for Desktop */}
-        <div className='hidden  md:flex justify-end lg:justify-around font-serif items-center gap-3 flex-wrap text-white relative text-[20px]'>
-          <Link to="/" className='hover:underline hover: transition-all mx-7 font-sans'>Home</Link>
-          <Link to="/about" className='hover:underline hover: transition-all mx-7 font-sans'>About</Link>
+        <div className='hidden md:flex justify-end lg:justify-around font-serif items-center gap-3 flex-wrap text-white relative text-[20px]'>
+          <Link to="/" className='hover:underline transition-all mx-7 font-sans font-bold	'>Home</Link>
+          <Link to="/about" className='hover:underline transition-all mx-7 font-sans font-bold	'>About</Link>
           {/* Services dropdown */}
           <div className='relative group'>
-            <div onClick={toggleServicesDropdown} className='hover:underline hover: transition-all mx-7 font-sans flex justify-center items-center cursor-pointer'>
+            <div onClick={toggleServicesDropdown} className='hover:underline transition-all mx-7 font-sans flex justify-center items-center cursor-pointer  font-bold	'>
               Services
               <IoMdArrowDropdown />
-              <div className={`absolute bg-white top-[100px] left-[9.5px]  lg:top-[77px] lg:left-0 text-black rounded shadow-lg mt-2 ${servicesDropdownOpen ? 'block' : 'hidden'} w-[340px]`}>
+              <div className={`absolute bg-white top-[100px] left-[9.5px] lg:top-[77px] lg:left-0 text-black rounded shadow-lg mt-2 ${servicesDropdownOpen ? 'block' : 'hidden'} w-[340px] `}>
                 <Link to="/service1" className='block px-4 py-2 hover:bg-gray-200  transition-all font-sans'>UG Medical Consultancy</Link>
                 <Link to="/service2" className='block px-4 py-2 hover:bg-gray-200 transition-all font-sans'>PG Medical Consultancy</Link>
               </div>
             </div>
           </div>
-          <Link to="/psychometrictest" className='hover:underline hover: transition-all  mx-7 font-sans'>Psychometric Test</Link>
-          <Link to="/contactform" className='hover:underline hover: transition-all  mx-7 font-sans'>Contact Us</Link>
-          <button onClick={toggleSidebar} className='hover:underline hover: transition-all mx-7 font-sans'>Login/Signup</button>
+          <Link to="/psychometrictest" className='hover:underline transition-all  mx-7 font-sans font-bold	 '>Psychometric Test</Link>
+          <Link to="/contactform" className='hover:underline transition-all  mx-7 font-sans font-bold	 '>Contact Us</Link>
+          <button onClick={toggleSidebar} className='hover:underline transition-all mx-7 font-sans font-bold	 '>Login/Signup</button>
         </div>
       </div>
       {/* Sidebar for Login/Signup */}
