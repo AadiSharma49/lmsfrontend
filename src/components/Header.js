@@ -29,7 +29,7 @@ const Header = () => {
 
   return (
     <>
-      <div className='w-full bg-gradient-to-r from-slate-900 to-slate-700 flex justify-between items-center p-5 relative'>
+      <div className='w-full bg-gradient-to-r from-slate-900 to-slate-700 flex justify-between items-center relative'>
         <Link to="/" className='flex justify-center items-center text-white'>
           <img src={logo} className='w-20 h-20 md:w-28 md:h-28 mr-2' alt='logo' />
           <h1 className='text-3xl md:text-5xl font-serif font-bold'>LMS</h1>
@@ -41,23 +41,23 @@ const Header = () => {
           </div>
           {/* Dropdown menu */}
           <div className={`bg-white text-black font-serif w-[300px] absolute rounded-bl-lg justify-start p-5 shadow-lg  right-[-20px] top-[77px] z-10 ${threeDotDropdownOpen ? 'flex flex-col' : 'hidden'}`}>
-            <Link to="/" className='hover:bg-gray-200 p-2 rounded mx-3 font-sans'>Home</Link>
-            <Link to="/about" className='hover:bg-gray-200 p-2 rounded mx-3 font-sans'>About</Link>
-            <Link onClick={toggleServicesDropdownThreeDot} className='hover:bg-gray-200 p-2 rounded flex items-center mx-3 font-sans'>Service <IoMdArrowDropdown /></Link>
+            <Link to="/" className='hover:bg-blue-600  hover:text-black p-2 rounded mx-3 font-sans font-bold'>Home</Link>
+            <Link to="/about" className='hover:bg-blue-600  hover:text-black  p-2 rounded mx-3 font-sans font-bold'>About</Link>
+            <Link onClick={toggleServicesDropdownThreeDot} className='hover:bg-gray-200 p-2 rounded flex items-center mx-3 font-sans font-bold'>Service <IoMdArrowDropdown /></Link>
             <Link to="/service1" className={` px-4 py-2 hover:bg-gray-200 ${servicesDropdownOpenThreeDot ? "block":"hidden"} `}>UG Medical Consultancy</Link>
             <Link to="/service2" className={` px-4 py-2 hover:bg-gray-200 ${servicesDropdownOpenThreeDot ? "block":"hidden"}`}>PG Medical Consultancy</Link>
-            <Link to="/psychometrictest" className='hover:bg-gray-200 p-2 rounded mx-3 font-sans'>Psychometric Test</Link>
-            <Link to="/contactform" className='hover:bg-gray-200 p-2 rounded mx-3 font-sans'>Contact Us</Link>
-            <Link to="/login" className='hover:bg-gray-200 p-2 rounded mx-3 font-sans'>Login/Signup</Link>
+            <Link to="/psychometrictest" className='hover:bg-blue-600  hover:text-black  p-2 rounded mx-3 font-sans font-bold'>Psychometric Test</Link>
+            <Link to="/contactform" className='hover:bg-blue-600  hover:text-black  p-2 rounded mx-3 font-sans font-bold'>Contact Us</Link>
+            <Link to="/login" className='hover:bg-blue-600  hover:text-black  p-2 rounded mx-3 font-sans font-bold'>Login/Signup</Link>
           </div>
         </div>
         {/* Main navigation for Desktop */}
-        <div className='hidden md:flex justify-end lg:justify-around font-serif items-center gap-3 flex-wrap text-white relative text-[20px]'>
-          <Link to="/" className='hover:underline transition-all mx-7 font-sans font-bold	'>Home</Link>
-          <Link to="/about" className='hover:underline transition-all mx-7 font-sans font-bold	'>About</Link>
+        <div className='hidden md:flex justify-end lg:justify-around font-serif items-center  mb-7 flex-wrap text-white relative text-[18px]'>
+          <Link to="/" className='hover:bg-blue-600 hover:text-black	transition-all py-3 px-4 font-sans font-bold'>Home</Link>
+          <Link to="/about" className='hover:bg-blue-600  hover:text-black transition-all  py-3 px-4 font-sans font-bold'>About</Link>
           {/* Services dropdown */}
           <div className='relative group'>
-            <div onClick={toggleServicesDropdown} className='hover:underline transition-all mx-7 font-sans flex justify-center items-center cursor-pointer  font-bold	'>
+            <div onClick={toggleServicesDropdown} className='hover:bg-blue-600  hover:text-black transition-all py-3 px-4 font-sans flex justify-center items-center cursor-pointer  font-bold	'>
               Services
               <IoMdArrowDropdown />
               <div className={`absolute bg-white top-[100px] left-[9.5px] lg:top-[77px] lg:left-0 text-black rounded shadow-lg mt-2 ${servicesDropdownOpen ? 'block' : 'hidden'} w-[340px] `}>
@@ -66,9 +66,9 @@ const Header = () => {
               </div>
             </div>
           </div>
-          <Link to="/psychometrictest" className='hover:underline transition-all  mx-7 font-sans font-bold	 '>Psychometric Test</Link>
-          <Link to="/contactform" className='hover:underline transition-all  mx-7 font-sans font-bold	 '>Contact Us</Link>
-          <button onClick={toggleSidebar} className='hover:underline transition-all mx-7 font-sans font-bold	 '>Login/Signup</button>
+          <Link to="/psychometrictest" className='hover:bg-blue-600  hover:text-black transition-all py-3 px-4  font-sans font-bold	 '>Psychometric Test</Link>
+          <Link to="/contactform" className='hover:bg-blue-600  hover:text-black transition-all py-3 px-4 font-sans font-bold	 '>Contact Us</Link>
+          <button onClick={toggleSidebar} className='hover:bg-blue-600  hover:text-black transition-all py-3 px-4 font-sans font-bold	 '>Login/Signup</button>
         </div>
       </div>
       {/* Sidebar for Login/Signup */}
