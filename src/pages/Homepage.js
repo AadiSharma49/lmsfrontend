@@ -21,7 +21,7 @@ const Homepage = () => {
           <p className="text-2xl mb-8">Your gateway to learning and growth</p>
           <Link
             to="/courses"
-            className="bg-white text-green-600 py-3 px-8 rounded-full font-semibold hover:bg-gradient-to-r from-blue-800 to-indigo-900 transition duration-300"
+            className=" bg-cyan-500 shadow-lg shadow-cyan-500/50 text-black py-3 px-8 rounded-full font-semibold hover:bg-gradient-to-r from-cyan-500 to-blue-500 transition duration-300"
           >
             Explore Courses
           </Link>
