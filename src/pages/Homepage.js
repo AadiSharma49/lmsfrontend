@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import courseImage1 from "../assets/images/adobe illustrator.jpg";
-import courseImage2 from "../assets/images/blender.jpg";
-import courseImage3 from "../assets/images/photoshop.jpg";
+import courseImage1 from "../assets/images/BBA.png";
+import courseImage2 from "../assets/images/B.tech.jpg";
+import courseImage3 from "../assets/images/Bca.jpg";
 import testimonialImage1 from "../assets/images/testimonial.png";
 import testimonialImage2 from "../assets/images/customer-review.png";
 import testimonialImage3 from "../assets/images/customer-satisfaction.png";
@@ -11,17 +11,127 @@ import predictiveImages from "../assets/images/predictive-chart.png"
 import psychometrictest from "../assets/images/critical-thinking.png"
 
 
+
 const Homepage = () => {
   return (
     <>
       <div className="w-full">
-        {/* Hero Section */}
-        <section className="bg-gradient-to-r from-slate-900 to-slate-700 text-white py-20 px-10 text-center">
-          <h1 className="text-5xl font-extrabold mb-4">Welcome to Learning HubSpot</h1>
-          <p className="text-2xl mb-8">Your gateway to learning and growth</p>
+      <style>
+        {`
+        @keyframes customAni {
+        0% {
+	      animation-timing-function: ease-in;
+	      opacity: 1;
+	         transform: translateY(-45px);
+         }
+
+         24% {
+	        opacity: 1;
+          }
+
+            40% {
+	       animation-timing-function: ease-in;
+	     transform: translateY(-24px);
+         }
+
+            65% {
+	      animation-timing-function: ease-in;
+	       transform: translateY(-12px);
+         }
+
+      82% {
+	      animation-timing-function: ease-in;
+	    transform: translateY(-6px);
+       }
+
+  93% {
+	animation-timing-function: ease-in;
+	transform: translateY(-4px);
+  }
+
+      25%,
+     55%,
+     75%,
+     87% {
+	    animation-timing-function: ease-out;
+	   transform: translateY(0px);
+     }
+
+     100% {
+     	animation-timing-function: ease-out;
+	   opacity: 1;
+	   transform: translateY(0px);
+     }
+   }
+
+
+          @keyframes fadeIn {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          @keyframes fadeInDown {
+            from {
+              opacity: 0;
+              transform: translateY(-20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          @keyframes fadeInUp {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+        }
+          .animate-fadeIn {
+            animation: fadeIn 1s ease-out;
+          }
+
+          .animate-fadeInDown {
+            animation: fadeInDown 1s ease-out;
+          }
+
+          .animate-fadeInUp {
+            animation: fadeInUp 1s ease-out;
+          }
+
+          .delay-100 {
+            animation-delay: 0.1s;
+          }
+
+          .delay-200 {
+            animation-delay: 0.2s;
+          }
+
+          .animate-customAni{
+         animation: customAni 2s ease-in 0s 1 normal none;
+         }
+         .delay-200{
+         animation-delay:0.2s;
+         }
+        `}
+      </style>
+        
+        <section className="bg-gradient-to-r from-green-400 to-blue-500 text-white py-20 px-10 text-center">
+          <h1 className="text-5xl font-extrabold mb-4 animate-fadeInDown ">Welcome to Learning HubSpot</h1>
+          <p className="text-2xl mb-8 animate-fadeInDown ">Your gateway to learning and growth</p>
           <Link
             to="/courses"
-            className=" bg-cyan-500 shadow-lg shadow-cyan-500/50 text-black py-3 px-8 rounded-full font-semibold hover:bg-gradient-to-r from-cyan-500 to-blue-500 transition duration-300"
+            className="bg-white text-green-600 py-3 px-8 rounded-full font-semibold hover:bg-green-200 transition duration-300 animate-fadeInUp"
           >
             Explore Courses
           </Link>
@@ -29,33 +139,36 @@ const Homepage = () => {
 
         {/* Courses Section */}
         <section className="py-20 px-10 bg-white">
-          <h2 className="text-5xl font-bold mb-12 text-center">
+          <h2 className="text-4xl font-bold mb-12 text-center animate-fadeInUp">
             Popular Courses
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-            {[courseImage1, courseImage2, courseImage3].map((course, index) => (
+            {[courseImage1, courseImage2, courseImage3].map((course) => (
               <div
-                key={index}
-                className="bg-white shadow-2xl rounded-2xl border-zinc-950	 overflow-hidden transform hover:scale-105 flex items-center justify-center flex-col transition duration-300"
-              >
+                className="bg-white shadow-2xl rounded-2xl border-zinc-950 overflow-hidden transform hover:scale-105 flex items-center justify-center flex-col animate-fadeInDown transition duration-300  cursor-pointer"
+                >
                 <img
                   src={course}
-                  alt={`Course ${index + 1}`}
+                  alt={`Course`}
                   className="w-[40%] h-[70%] p-7 object-cover"
                 />
                 <div className="p-4 text-center"s>
-                  <h3 className="text-2xl font-bold mb-2">
+                  <h3 className="text-2xl font-bold mb-2 animate-fadeInDown">
                   Bachelor of Business Administration 
                   </h3>
-                  <p className="text-gray-600 mb-4">
+                  <p className="text-gray-600 mb-4 animate-fadeInDown">
                   An undergraduate course in business administration and management. 
                   </p>
                   <Link
-                    to={`/course-details/${index + 1}`}
-                    className="text-green-600 font-semibold hover:underline"
+                    to={`/course-details/`}
+                    className="text-green-600 font-semibold hover:underline animate-fadeInDown"
                   >
                     Learn More
                   </Link>
+                  <linK
+                      >
+                    Learn More
+                  </linK>
                 </div>
               </div>
             ))}
@@ -63,12 +176,12 @@ const Homepage = () => {
         </section>
 
         {/* Psychometric Assessment Section */}
-        <section className="bg-gradient-to-tl from-slate-900 via-slate-400 to-slate-600 text-white py-20 px-10 mt-12 mb-12 text-center rounded-xl mx-4">
-          <h2 className="text-3xl font-bold mb-4">Psychometric Assessment</h2>
+        <section className="bg-gradient-to-tl from-slate-900 via-slate-400 to-slate-600 text-white py-20 px-10 mt-12 mb-12 text-center rounded-xl mx-4 animate-fadeInUp">
+          <h2 className="text-3xl font-bold mb-4 ">Psychometric Assessment</h2>
           <p className="text-xl mb-8">Sign up and start your free assessment</p>
           <Link
             to="/signup"
-            className="bg-white text-pink-700 py-3 px-8 rounded-full font-semibold hover:bg-pink-200 transition duration-300"
+            className="bg-white text-pink-700 py-3 px-8 rounded-full font-semibold hover:bg-pink-200  transition duration-300 animate-customAni "
           >
             Get Started
           </Link>
@@ -76,14 +189,14 @@ const Homepage = () => {
 
         {/* Test & Assessment Section */}
         <section className="py-20 px-10 bg-gray-100">
-          <h2 className="text-3xl font-bold mb-12 text-center">
+          <h2 className="text-3xl font-bold mb-12 text-center animate-fadeInUp">
             Test & Assessment
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[ psychometrictest, predictiveImages].map((course, index) => (
               <div
                 key={index}
-                className="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 flex flex-col justify-center items-center"
+                className="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300 flex flex-col justify-center items-center animate-fadeInUp  cursor-pointer"
               >
                 <img
                   src={course}
@@ -115,9 +228,9 @@ const Homepage = () => {
         </section>
 
         {/* Call-to-Action Section */}
-        <section className="bg-gradient-to-r from-blue-400 to-teal-500 text-white py-20 px-10 text-center rounded-xl mx-4">
-          <h2 className="text-3xl font-bold mb-4">Join Us Today</h2>
-          <p className="text-xl mb-8">
+        <section className="bg-gradient-to-r from-blue-400 to-teal-500 text-white py-20 px-10 text-center rounded-xl mx-4 animate-fadeInUp">
+          <h2 className="text-3xl font-bold mb-4 animate-fadeInUp">Join Us Today</h2>
+          <p className="text-xl mb-8 animate-fadeInUp">
             Sign up and start your learning journey with us.
           </p>
           <Link
@@ -129,8 +242,8 @@ const Homepage = () => {
         </section>
 
         {/* Testimonials Section */}
-        <section className="py-20 px-10 bg-gray-100 text-center">
-          <h2 className="text-4xl font-bold mb-12">Testimonials</h2>
+        <section className="py-20 px-10 bg-gray-100 text-center animate-fadeInUp">
+          <h2 className="text-4xl font-bold mb-12 animate-fadeInUp">Testimonials</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
